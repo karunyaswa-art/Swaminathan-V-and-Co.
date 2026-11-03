@@ -43,8 +43,8 @@
     .brand-mark:before{content:"";position:absolute;inset:5px;border:1px solid rgba(180,154,104,.65)}
     .brand-mark span{font:600 23px/.8 var(--serif);letter-spacing:-.08em;position:relative}
     .brand-copy{display:flex;flex-direction:column;line-height:1.1}
-    .brand-name{font:600 27px/1 var(--serif);letter-spacing:.015em;color:var(--forest);white-space:nowrap}
-    .brand-sub{font-size:9px;letter-spacing:.23em;text-transform:uppercase;color:#69736c;margin-top:7px;font-weight:700}
+    .brand-name{font:600 clamp(25px,2.2vw,32px)/1 var(--serif);letter-spacing:.015em;color:var(--forest);white-space:nowrap}
+    .brand-sub{font-size:10px;letter-spacing:.23em;text-transform:uppercase;color:#69736c;margin-top:8px;font-weight:700}
     .ca-seal{width:40px;height:40px;display:grid;place-items:center;border:1px solid var(--gold);color:var(--forest);font:700 14px var(--sans);letter-spacing:-.06em;position:relative;flex:none}
     .ca-seal:after{content:"";position:absolute;inset:3px;border:1px solid rgba(180,154,104,.7)}
     .header{position:sticky;top:0;z-index:20;background:rgba(252,251,247,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(25,61,50,.12)}
@@ -148,6 +148,7 @@
     .footer{background:var(--deep);color:#d7e0d9;padding:48px 0 28px}
     .footer-top{display:flex;align-items:center;justify-content:space-between;gap:30px;padding-bottom:35px;border-bottom:1px solid rgba(246,243,235,.16)}
     .footer .brand-mark{background:transparent;color:var(--ivory)}
+    .footer-ca-logo{width:58px;height:42px}
     .footer .brand-name{color:var(--ivory)}
     .footer .brand-sub{color:#b8c5bb}
     .footer-links{display:flex;gap:23px;flex-wrap:wrap;font-size:10px;color:#c6d0c8}
@@ -161,7 +162,8 @@
     @media(max-width:760px){
       .container{width:min(100% - 40px,var(--max))}
       .nav-wrap{min-height:82px}.brand-mark{width:49px;height:49px}.brand-name{font-size:22px}.brand-sub{font-size:8px}
-      .ca-seal{width:35px;height:35px}.menu-toggle{display:block}
+      .firm-ca-logo{width:54px;height:41px}.ca-seal{width:35px;height:35px}.menu-toggle{display:block}
+      .identity-banner img{max-height:none;object-fit:contain}
       .nav-links{display:none;position:absolute;top:82px;left:0;right:0;background:var(--paper);padding:18px 22px 24px;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}
       .nav-links.open{display:flex}.nav-links a{padding:13px 4px;border-bottom:1px solid var(--line)}.nav-links .nav-contact{text-align:center;margin-top:12px}
       .hero-image{inset:0;background-position:center;opacity:.32}
@@ -199,7 +201,7 @@
     <div class="container nav-wrap">
       <a class="nav-brand" href="#home" aria-label="Swaminathan V and Co home">
         <div class="brand">
-          <div class="brand-mark" aria-hidden="true"><span>SV<br>&amp;C</span></div>
+          <img class="firm-ca-logo" src="assets/ca-mark.png" alt="CA mark supplied for Swaminathan V &amp; Co.">
           <div class="brand-copy">
             <span class="brand-name">Swaminathan V &amp; Co.</span>
             <span class="brand-sub">Chartered Accountants</span>
@@ -216,6 +218,9 @@
   </header>
 
   <main>
+    <section class="identity-banner" aria-label="Swaminathan Venkataraman professional identity banner">
+      <img src="assets/swaminathan-brand-banner.jpg" alt="V. Swaminathan — Chartered Accountant, Independent Director and Strategic Advisor">
+    </section>
     <section class="hero" id="home">
       <div class="hero-image" aria-hidden="true"></div>
       <div class="container hero-inner">
@@ -374,7 +379,7 @@
       <div class="footer-top">
         <a class="nav-brand" href="#home">
           <div class="brand">
-            <div class="brand-mark"><span>SV<br>&amp;C</span></div>
+            <img class="firm-ca-logo footer-ca-logo" src="assets/ca-mark.png" alt="CA mark supplied for Swaminathan V &amp; Co.">
             <div class="brand-copy"><span class="brand-name">Swaminathan V &amp; Co.</span><span class="brand-sub">Chartered Accountants</span></div>
           </div>
         </a>

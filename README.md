@@ -16,6 +16,7 @@ Open `index.html` in a browser. The site uses Google Fonts and a remote Unsplash
 ## Before publishing
 - Replace `REPLACE-WITH-FIRM-EMAIL@example.com` in `index.html` with the firm's verified email address. The enquiry form currently prepares an email draft; it does not store or transmit enquiries to a server.
 - Replace the leadership portrait placeholder with an approved professional photograph.
+- The supplied identity banner and CA mark are stored in `assets/` and included in the header/footer. Confirm that the firm is authorised to use all marks appearing in the supplied banner and CA artwork before publication.
 - Confirm the office address and all service descriptions.
 - Review website content and the use of professional designations and marks against applicable ICAI requirements.
 - The custom SV&Co monogram and CA lettering are a typographic firm identity, not an official ICAI logo or endorsement.
